@@ -103,7 +103,9 @@ ENV JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64/"
 # Download maven dependencies
 RUN wget https://raw.githubusercontent.com/VowpalWabbit/vowpal_wabbit/master/java/pom.xml.in \
  && mvn dependency:resolve -f pom.xml.in \
- && rm pom.xml.in
+ && rm pom.xml.in \
+ && echo yes
+ 
 
 # Cleanup
 # TODO: Turn this into a script
