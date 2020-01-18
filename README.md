@@ -24,3 +24,5 @@ docker push vowpalwabbit/centos7_6_1810-build:<tag>
 
 - To push latest replace `<tag>` with `latest`
 - To push a tagged version replace `<tag>` with a tag such as `0.4.0`
+
+test again test  dfdfg
